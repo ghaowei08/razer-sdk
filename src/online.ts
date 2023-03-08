@@ -142,13 +142,13 @@ export class RazerOnlineSDK implements RazerOnlineSDKInstance {
       })
     )
     if (!response.data?.status) throw response.data
-    return response.data.result.map((gateway: any) => ({
+    return response.data.result.map((gateway: any): ChannelRes => ({
       title: gateway.title,
       status: gateway.status == 1,
       canApplePay: gateway.applepay_enabled == 1,
       canGooglePay: gateway.googlepay_enabled == 1,
       currency: gateway.currency,
-      logo: {
+      logoUrl: {
         '16x16': gateway.logo_url_16x16,
         '24x24': gateway.logo_url_24x24,
         '32x32': gateway.logo_url_32x32,

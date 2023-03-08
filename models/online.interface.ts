@@ -103,7 +103,7 @@ export interface ChannelRes {
   currency: string[];
   channel: string;
   logoUrl: ChannelLogo;
-  type: CHANNEL_TYPE
+  type?: CHANNEL_TYPE
 }
 
 export interface RefundStatusReq {
