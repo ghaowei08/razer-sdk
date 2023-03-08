@@ -1,0 +1,35 @@
+{
+  "name": "razer-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "watch": "concurrently \"tsc --watch\" \"nodemon dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghaowei08/razer-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ghaowei08/razer-sdk/issues"
+  },
+  "publishConfig": {
+    "@ghaowei08:registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "razer",
+    "payment",
+    "sdk"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "moment": "^2.29.4",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.14.4",
+    "@types/qs": "^6.9.7",
+    "typescript": "^4.8.4"
+  }
+}
