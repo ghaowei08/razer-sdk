@@ -1,14 +1,16 @@
 name: "🚀 release"
 
 on:
-  push:
-    branches:
-      - release
+  release:
+    types: [created]
 
 jobs:
   release:
     name: 🚀 release
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
     steps:
       - name: 📚 release
         uses: actions/checkout@v3

@@ -1,6 +1,6 @@
 {
   "name": "razer-sdk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -31,5 +31,12 @@
     "@types/node": "^10.14.4",
     "@types/qs": "^6.9.7",
     "typescript": "^4.8.4"
-  }
+  },
+  "description": "This is a Razer SDK that allows developers to integrate their application or website with a payment gateway. A payment gateway is a service that authorizes and processes payments between customers and merchants.",
+  "homepage": "https://github.com/ghaowei08/razer-sdk#readme",
+  "directories": {
+    "doc": "doc",
+    "example": "example"
+  },
+  "author": "ghaowei08"
 }
